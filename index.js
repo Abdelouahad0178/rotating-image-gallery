@@ -41,6 +41,17 @@ nextEl.addEventListener("click", () => {
   updateGallery();
 });
 
+// Ajouter un événement de clic pour chaque image
+const spans = document.querySelectorAll(".image-container span");
+spans.forEach(span => {
+  span.addEventListener("click", () => {
+    const link = span.getAttribute("data-link");
+    if (link) {
+      window.location.href = link; // Redirige vers la page spécifiée
+    }
+  });
+});
+
 function updateGallery() {
   imageContainerEl.style.transform = `perspective(1000px) rotateY(${x}deg)`;
   timer = setTimeout(() => {
