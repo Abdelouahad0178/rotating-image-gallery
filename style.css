@@ -9,15 +9,16 @@ body, h1, h2, p, img, a {
 
 /* Styles généraux */
 body {
-  width: 99%;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   text-align: center;
-  min-height: 90vh;
+  min-height: 100vh;
   justify-content: space-between;
   background-color: #55538b;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden; /* Empêche le scroll */
 }
 
 /* Navbar */
@@ -42,17 +43,29 @@ body {
   font-size: 16px;
 }
 
+/* Social Media Bar */
+.social1 {
+  position: fixed;
+  right: -2px;
+  top: 40%;
+  transform: rotate(90deg);
+  z-index: 9999;
+}
+
+.fab {
+  transform: rotate(-90deg);
+  font-size: 20px;
+}
+
 /* Conteneur pour les images */
 .image-container {
   position: relative;
-  width: 300px; /* Taille par défaut */
+  width: 300px;
   height: auto;
   transform-style: preserve-3d;
   transform: perspective(1000px) rotateY(0deg);
   transition: transform 0.7s ease-in-out;
-  margin: 3% auto;
-  
-
+  margin: 20px auto;
 }
 
 .image-container span {
@@ -91,8 +104,9 @@ body {
 /* Boutons de navigation */
 .btn-container {
   margin-top: 20px;
-  width: 80%;
+  width: 100%;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .btn {
@@ -117,7 +131,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 20%;
-  margin-bottom: 20px;
 }
 
 .qr-code img {
@@ -137,34 +150,15 @@ body {
   color: inherit; /* Hérite de la couleur de l'élément parent */
 }
 
-
-.social1 {
-  position: fixed;
-  right: -2px;
-  top: 40%;
-  rotate: 90deg;
-  z-index: 9999999999;
-}
-
-.fab {
-  rotate: 270deg;
-  font-size: 20px;
-}
-
-
-
-
-
-
-
 /* Media queries pour responsivité */
 @media (max-width: 1440px) {
   .image-container {
     width: 280px;
   }
+
   .btn {
     padding: 8px 16px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
@@ -172,15 +166,21 @@ body {
   .image-container {
     width: 260px;
   }
+
+  .btn {
+    padding: 8px 16px;
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 992px) {
   .image-container {
     width: 250px;
   }
+
   .btn {
     padding: 8px 16px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
@@ -188,9 +188,10 @@ body {
   .image-container {
     width: 220px;
   }
+
   .btn {
     padding: 8px 16px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 
@@ -202,9 +203,10 @@ body {
   .btn-container {
     width: 100%;
   }
+
   .btn {
     padding: 8px 16px;
-    margin-top: 30%;
+    margin-top: 20px;
   }
 }
 
@@ -212,22 +214,16 @@ body {
   .image-container {
     width: 190px;
   }
+
   .btn {
     padding: 8px 16px;
-    margin-top: 53%;
-  }
-  .qr-position-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50%;
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 425px) {
   .image-container {
-    width: 190px;
+    width: 180px;
   }
 
   .btn-container {
@@ -236,20 +232,7 @@ body {
 
   .btn {
     padding: 8px 16px;
-    margin-top: 58%;
+    margin-top: 20px;
   }
 }
 
-@media (max-width: 375px) {
-  .image-container {
-    width: 120px;
-  }
-
-  .btn-container {
-    width: 85%;
-  }
-
-  .btn {
-    padding: 6px 12px;
-  }
-}
