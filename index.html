@@ -4,16 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Rotating Image Gallery</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <div class="navbar" id="myNavbar">
+      <h1 style="margin-bottom:1%; color:white; font-size:26px; font-family:Verdana, Geneva, Tahoma, sans-serif">MAISON CARRELAGE</h1><br>
+      <h2  style="color:white">Carrellage . Sanitaire . Robinetterie</h2>
+  </div>
+
+
+
+
+
     <div class="image-container">
       <span style="--i: 1" data-link="BONN_CREMA_STD_31.6X90.50.html">
         <img src="/images/BONN_CREMA_STD_31.6X90.50.jpg" style="width: 110%;" />
         <div class="details">
           <p class="name">BONN_CREMA_STD_31.6X90.50</p>
-          <p class="price">110 dhs<span style="color: black;">/M²</span></p>
+          <p class="price">110 dhs</p>
           
         </div>
       </span>
@@ -77,6 +88,23 @@
       <button class="btn" id="prev">Prev</button>
       <button class="btn" id="next">Next</button>
     </div>
+
+
+
+    <!-- QR Code and Position Icon -->
+    <div class="qr-position-container">
+      <div class="qr-code">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=http://maisoncarrelage.net" alt="QR Code Maison Carrelage">
+      </div>
+      <div class="position-icon">
+          <a href="https://www.google.com/maps/search/?api=1&query=maisoncarrelage.net" target="_blank">
+              <i class="fas fa-map-marker-alt"></i>
+          </a>
+      </div>
+  </div>
+
+
+
     <script src="index.js"></script>
   </body>
 </html>

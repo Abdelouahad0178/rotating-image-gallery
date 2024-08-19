@@ -4,9 +4,9 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  height: 50vh;
   justify-content: center;
-  background-color: #010014;
+  background-color: #55538b;
   overflow: hidden;
 }
 
@@ -142,4 +142,32 @@ body {
   .btn {
     padding: 6px 12px;
   }
+}
+
+
+
+
+/* Styles for QR Code and Position Icon */
+.qr-position-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.qr-code img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  filter: drop-shadow(0 50px 20px #0009);
+}
+
+.position-icon i {
+  font-size: 30px;
+  color: #3c9a37; /* Light green color */
+  filter: drop-shadow(0 50px 20px #0009);
+}
+
+.position-icon a {
+  color: inherit; /* Inherits the color from the parent element */
 }
