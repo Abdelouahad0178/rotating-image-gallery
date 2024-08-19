@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  min-height: 100vh;
+  min-height: 80vh;
   justify-content: space-between;
   background-color: #55538b;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -150,6 +150,12 @@ body {
   color: inherit; /* Hérite de la couleur de l'élément parent */
 }
 
+
+
+
+.footer{
+  margin-top: 60%;
+}
 /* Media queries pour responsivité */
 @media (max-width: 1440px) {
   .image-container {
