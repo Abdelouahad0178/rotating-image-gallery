@@ -1,22 +1,55 @@
+/* Reset de base */
+body, h1, h2, p, img, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* Styles généraux */
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
-  height: 50vh;
-  justify-content: center;
+  min-height: 100vh;
+  justify-content: space-between;
   background-color: #55538b;
-  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.navbar h1 {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 26px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar h2 {
+  color: white;
+  font-size: 20px;
+}
+
+/* Conteneur pour les images */
 .image-container {
   position: relative;
   width: 300px; /* Taille par défaut */
   height: auto;
   transform-style: preserve-3d;
   transform: perspective(1000px) rotateY(0deg);
-  transition: transform 0.7s;
+  transition: transform 0.7s ease-in-out;
+  margin: auto;
 }
 
 .image-container span {
@@ -43,17 +76,16 @@ body {
 }
 
 .details .name {
-  margin: 0;
-  font-weight:300;
+  font-weight: 300;
   font-size: 12px;
 }
 
 .details .price {
-  margin: 5px 0 0 0;
   font-size: 14px;
   color: #ffd700; /* Couleur dorée pour le prix */
 }
 
+/* Boutons de navigation */
 .btn-container {
   margin-top: 20px;
   width: 80%;
@@ -68,14 +100,15 @@ body {
   border-radius: 5px;
   cursor: pointer;
   margin: 0 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-  filter: brightness(1.5);
+  background-color: #483d8b;
+  transform: scale(1.05);
 }
 
-/* Media queries pour différentes tailles d'écran */
-
+/* Media queries pour responsivité */
 @media (max-width: 1440px) {
   .image-container {
     width: 280px;
@@ -144,15 +177,13 @@ body {
   }
 }
 
-
-
-
-/* Styles for QR Code and Position Icon */
+/* Styles pour le QR Code et l'icône de position */
 .qr-position-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin-top: auto;
+  margin-bottom: 20px;
 }
 
 .qr-code img {
@@ -164,10 +195,10 @@ body {
 
 .position-icon i {
   font-size: 30px;
-  color: #3c9a37; /* Light green color */
+  color: #3c9a37; /* Couleur verte claire */
   filter: drop-shadow(0 50px 20px #0009);
 }
 
 .position-icon a {
-  color: inherit; /* Inherits the color from the parent element */
+  color: inherit; /* Hérite de la couleur de l'élément parent */
 }
