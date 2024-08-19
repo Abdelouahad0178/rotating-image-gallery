@@ -44,8 +44,8 @@ body {
 
 .details .name {
   margin: 0;
-  font-weight: bold;
-  font-size: 16px;
+  font-weight:300;
+  font-size: 12px;
 }
 
 .details .price {
