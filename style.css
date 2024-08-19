@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   background-color: #55538b;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  overflow: hidden; /* Empêche le scroll */
+  overflow-x: hidden;
 }
 
 /* Navbar */
