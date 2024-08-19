@@ -51,6 +51,8 @@ body {
   transform: perspective(1000px) rotateY(0deg);
   transition: transform 0.7s ease-in-out;
   margin: 3% auto;
+  
+
 }
 
 .image-container span {
