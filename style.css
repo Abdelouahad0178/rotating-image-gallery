@@ -9,12 +9,12 @@ body, h1, h2, p, img, a {
 
 /* Styles généraux */
 body {
-  margin: 0;
+  width: 99%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
-  
-  min-height: 100vh;
+  min-height: 90vh;
   justify-content: space-between;
   background-color: #55538b;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -109,8 +109,6 @@ body {
   transform: scale(1.05);
 }
 
-
-
 /* Styles pour le QR Code et l'icône de position */
 .qr-position-container {
   display: flex;
@@ -137,13 +135,6 @@ body {
   color: inherit; /* Hérite de la couleur de l'élément parent */
 }
 
-
-
-
-
-
-
-
 /* Media queries pour responsivité */
 @media (max-width: 1440px) {
   .image-container {
@@ -152,7 +143,7 @@ body {
   .btn {
     padding: 8px 16px;
     margin-top: 40px;
-}
+  }
 }
 
 @media (max-width: 1024px) {
@@ -168,7 +159,7 @@ body {
   .btn {
     padding: 8px 16px;
     margin-top: 40px;
-}
+  }
 }
 
 @media (max-width: 820px) {
@@ -178,7 +169,7 @@ body {
   .btn {
     padding: 8px 16px;
     margin-top: 40px;
-}
+  }
 }
 
 @media (max-width: 770px) {
@@ -191,8 +182,8 @@ body {
   }
   .btn {
     padding: 8px 16px;
-    margin-top: 188px;
-}
+    margin-top: 30%;
+  }
 }
 
 @media (max-width: 520px) {
@@ -201,15 +192,15 @@ body {
   }
   .btn {
     padding: 8px 16px;
-    margin-top: 40%;
-}
-.qr-position-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50%;
-  margin-bottom: 20px;
-}
+    margin-top: 53%;
+  }
+  .qr-position-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -223,12 +214,7 @@ body {
 
   .btn {
     padding: 8px 16px;
-    
-    .btn {
-     
-      padding: 8px 16px;
-      MARGIN-TOP: 79px;
-  }
+    margin-top: 58%;
   }
 }
 
