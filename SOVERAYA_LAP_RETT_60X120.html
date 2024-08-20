@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOVERAYA_LAP_RETT_60X120</title>
+    <title></title>
     <style>
         body {
             margin: 0;
@@ -14,7 +14,7 @@
             background-color: #f5f5f5;
             color: #333;
         }
-
+        
         .product-container {
             width: 100%;
             max-width: 800px;
@@ -22,47 +22,60 @@
             box-sizing: border-box;
             filter: drop-shadow(0 50px 20px #0009);
         }
-
+        
         h2 {
             font-size: 24px;
             margin-bottom: 10px;
         }
-
+        
         img {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
-
+        
         .price {
             font-size: 25px;
-            color: #ea310b;
-            margin: 10px 0;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #fff7e6; /* Couleur de fond clair */
+            border-radius: 5px; /* Coins arrondis pour un look plus doux */
         }
-
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #333; /* Couleur par défaut pour le prix barré */
+            margin-right: 15px; /* Espace clair entre les prix */
+        }
+        
+        .promo-price {
+            color: #ea310b; /* Couleur rouge pour le prix promotionnel */
+            font-weight: bold;
+        }
+        
         .description {
             font-size: 16px;
             margin: 20px 0;
         }
-
+        
         .specifications {
             text-align: left;
             margin-bottom: 20px;
         }
-
+        
         .specifications ul {
             padding-left: 20px;
         }
-
+        
         .reviews {
             text-align: left;
             margin-bottom: 20px;
         }
-
+        
         .reviews .review {
             margin-bottom: 10px;
         }
-
+        
         .btn {
             background-color: #5cb85c;
             color: white;
@@ -72,69 +85,86 @@
             cursor: pointer;
             text-decoration: none;
         }
-
+        
         .btn:hover {
             background-color: #4cae4c;
         }
-
+        
         /* Responsive Design */
         @media (max-width: 768px) {
             h2 {
                 font-size: 20px;
             }
-
+        
             .price {
-                font-size: 30px;
+                font-size: 18px;
                 margin-top: 30px;
             }
-
+        
             .description {
                 font-size: 14px;
             }
-
+        
             .specifications, .reviews {
                 font-size: 14px;
             }
-
+        
             .btn {
                 padding: 8px 16px;
             }
         }
+        
     </style>
 </head>
 <body>
 
-<div class="product-container">
     <a href="/index.html">Retour</a>
+    <div class="navbar" id="myNavbar">
+        <h1 style="margin-bottom:1%; color:black; font-size:26px; font-family:Verdana, Geneva, Tahoma, sans-serif">MAISON CARRELAGE</h1><br>
+        <h2  style="color:black">Carrellage . Sanitaire . Robinetterie</h2>
+    </div>
+  
+
+
+<div class="product-container">
+    
     <h2>SOVERAYA_LAP_RETT_60X120</h2>
     <img src="/images/SOVERAYA_LAP_RETT_60X120.jpeg" alt="SOVERAYA_LAP_RETT_60X120">
-    <p class="price">270 dhs <span style="color: black;">/M²</span></p>
+    
+    <!--- p class="price" style="text-decoration: line-through;color:unset">450 DHS <span style="color: RED; text-decoration:none">270 DHS/M²</span></p>-->
+    
+    <p class="price">
+        <span class="original-price">450 DHS</span>
+        <span class="promo-price">270 DHS/M²</span>
+    </p>
+    
     <p class="description">
-        Le SOVERAYA_LAP_RETT_60X120 est la quintessence du luxe. Ce carrelage exceptionnel, aux finitions parfaites, est idéal pour créer une ambiance royale dans votre espace. Saisissez cette chance de transformer votre intérieur en un palais somptueux.
+        Découvrez l'élégance intemporelle du SOVERAYA_LAP_RETT_60X120. Parfait pour sublimer n'importe quel espace, ce carrelage est une véritable œuvre d'art. Ne manquez pas l'occasion d'ajouter une touche de luxe à votre intérieur.
     </p>
 
     <div class="specifications">
         <h3>Spécifications du Produit</h3>
         <ul>
-            <li>Dimension : 60x120 cm</li>
-            <li>Matériau : Céramique</li>
-            <li>Finition : Pulido</li>
-            <li>Couleur : Or</li>
+            <li>Dimension : 60X120 cm</li>
+            <li>MatériauX : Céramique</li>
+            <li>Finition : EXTRA POLI</li>
+            
         </ul>
     </div>
 
     <div class="reviews">
         <h3>Avis des Clients</h3>
         <div class="review">
-            <p><strong>DOUNIA BRAHIM</strong> - "Le luxe absolu pour ma salle de séjour. Ce carrelage est sublime."</p>
+            <p><strong>HAJ BRAHIM</strong> - "Superbe produit, a totalement transformé ma salle de bain !"</p>
         </div>
         <div class="review">
-            <p><strong>FARISSE BABANA</strong> - "Excellent produit, il a complètement transformé mon espace de vie."</p>
+            <p><strong>SAMIR DAOUDI</strong> - "Haute qualité et design élégant. Je le recommande vivement !"</p>
         </div>
     </div>
 
     
     <a href="https://wa.me/+212665477717"> <span style="color: #0ba70b;">ACHETEZ ICI</span> </a>
+
 
 
 </div>

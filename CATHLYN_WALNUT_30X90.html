@@ -14,7 +14,7 @@
             background-color: #f5f5f5;
             color: #333;
         }
-
+        
         .product-container {
             width: 100%;
             max-width: 800px;
@@ -22,47 +22,60 @@
             box-sizing: border-box;
             filter: drop-shadow(0 50px 20px #0009);
         }
-
+        
         h2 {
             font-size: 24px;
             margin-bottom: 10px;
         }
-
+        
         img {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
-
+        
         .price {
             font-size: 25px;
-            color: #ea310b;
-            margin: 10px 0;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #fff7e6; /* Couleur de fond clair */
+            border-radius: 5px; /* Coins arrondis pour un look plus doux */
         }
-
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #333; /* Couleur par défaut pour le prix barré */
+            margin-right: 15px; /* Espace clair entre les prix */
+        }
+        
+        .promo-price {
+            color: #ea310b; /* Couleur rouge pour le prix promotionnel */
+            font-weight: bold;
+        }
+        
         .description {
             font-size: 16px;
             margin: 20px 0;
         }
-
+        
         .specifications {
             text-align: left;
             margin-bottom: 20px;
         }
-
+        
         .specifications ul {
             padding-left: 20px;
         }
-
+        
         .reviews {
             text-align: left;
             margin-bottom: 20px;
         }
-
+        
         .reviews .review {
             margin-bottom: 10px;
         }
-
+        
         .btn {
             background-color: #5cb85c;
             color: white;
@@ -72,35 +85,35 @@
             cursor: pointer;
             text-decoration: none;
         }
-
+        
         .btn:hover {
             background-color: #4cae4c;
         }
-
+        
         /* Responsive Design */
         @media (max-width: 768px) {
             h2 {
                 font-size: 20px;
             }
-
+        
             .price {
-                font-size: 30px;
+                font-size: 18px;
                 margin-top: 30px;
             }
-
+        
             .description {
                 font-size: 14px;
             }
-
+        
             .specifications, .reviews {
                 font-size: 14px;
             }
-
+        
             .btn {
                 padding: 8px 16px;
             }
         }
-    </style>
+            </style>
 </head>
 <body>
 
@@ -109,8 +122,10 @@
     <a href="/index.html">Retour</a>
     <h2>CATHLYN_WALNUT_30X90</h2>
     <img src="/images/CATHLYN_WALNUT_30X90.jpg" alt="CATHLYN_WALNUT_30X90">
-    <p class="price">140 dhs <span style="color: black;">/M²</span></p>
-    
+    <p class="price">
+        <span class="original-price">190 DHS</span>
+        <span class="promo-price">140 DHS/M²</span>
+    </p>
     <p class="description">
         Le CATHLYN_WALNUT_30X90 allie robustesse et design moderne. Sa texture unique apportera un caractère authentique à votre espace. Ne laissez pas passer cette occasion de transformer votre maison.
     </p>
@@ -118,10 +133,10 @@
     <div class="specifications">
         <h3>Spécifications du Produit</h3>
         <ul>
-            <li>Dimension : 60x120 cm</li>
-            <li>Matériau : Pierre naturelle</li>
+            <li>Dimension : 30X90 cm</li>
+            <li>Matériau : Ccéramique</li>
             <li>Finition : Mat</li>
-            <li>Couleur : Brun</li>
+            <li>Couleur : mono</li>
         </ul>
     </div>
 
